@@ -204,7 +204,7 @@ export async function createProjectStream(req: Request, res: Response) {
 export async function getProject(req: Request, res: Response) {
   try {
     const userId = req.user?.id;
-    const { projectId } = req.params;
+    const projectId = req.params.projectId as string;
 
     if (!userId) {
       return res.status(401).json({
@@ -230,7 +230,7 @@ export async function getProject(req: Request, res: Response) {
       });
     }
 
-    const currentVersion = project.version.find(
+    const currentVersion = (project.version || []).find(
       (v) => v.id === project.currentVersionId
     );
 
@@ -348,7 +348,7 @@ export async function getProjects(req: Request, res: Response) {
 export async function deleteProject(req: Request, res: Response) {
   try {
     const userId = req.user?.id;
-    const { projectId } = req.params;
+    const projectId = req.params.projectId as string;
 
     if (!userId) {
       return res.status(401).json({

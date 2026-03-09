@@ -82,7 +82,7 @@ function unflattenFiles(flatFiles: Record<string, string>): any {
 // Edit project via chat 
 
 export async function editProjectChat(req: Request, res: Response) {
-    const { projectId } = req.params;
+    const projectId = req.params.projectId as string;
     const userId = req.user?.id;
 
     // Parse payload

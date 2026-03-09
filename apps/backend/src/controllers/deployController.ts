@@ -29,7 +29,7 @@ function flattenFiles(
 }
 
 export async function deployProject(req: Request, res: Response) {
-    const { projectId } = req.params;
+    const projectId = req.params.projectId as string;
     const userId = req.user?.id;
 
     if (!userId) {
