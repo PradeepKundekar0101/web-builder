@@ -9,7 +9,7 @@ import dotenv from "dotenv";
 dotenv.config();
 const app = express();
 
-app.use(cors({ origin: "https://getbuild.tech", credentials: true }));
+app.use(cors({ origin: ["https://www.getbuild.tech", "https://getbuild.tech"], credentials: true }));
 app.use(cookieParser());
 app.use(express.json());
 
