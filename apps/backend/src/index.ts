@@ -12,7 +12,7 @@ const app = express();
 
 //cors before routes
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: "*",
     credentials: true, //allow cookies,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
 }))

@@ -12,14 +12,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="flex justify-between pt-20">
-   <div className="h-28 w-28 rounded-3xl ring-1 ring-inset ring-neutral-300/10 flex items-center justify-center">
-  <LogoIcon className="h-22 w-22 text-neutral-300" />
-</div>
+          <div className="h-28 w-28 rounded-3xl ring-1 ring-inset ring-neutral-300/10 flex items-center justify-center">
+            <LogoIcon className="h-22 w-22 text-neutral-300" />
+          </div>
 
 
           <div className="flex gap-8">
             <a
-              href="https://github.com/AniruddhaM18/Adorable/"
+              href="https://github.com/pradeepkundekar0101/web-builder/"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-neutral-400 hover:text-neutral-300 transition"
@@ -28,14 +28,14 @@ export default function Footer() {
             </a>
 
             <a
-              href="mailto:aniruddhamaradwar9@gmail.com"
+              href="mailto:pradeepkundekar0101@gmail.com"
               className="block text-neutral-400 hover:text-neutral-300 transition"
             >
               <SiGmail className="h-12 w-auto" />
             </a>
 
             <a
-              href="https://www.linkedin.com/in/aniruddha-m18/"
+              href="https://www.linkedin.com/in/pradeep-kundekar-0101/"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-neutral-400 hover:text-neutral-300 transition"
@@ -44,7 +44,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://x.com/Aniruddha18M"
+              href="https://x.com/pradeepkundekar0101"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-neutral-400 hover:text-neutral-300 transition"
@@ -57,7 +57,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center pt-28 pb-8 relative overflow-hidden">
           <h1 className="text-[22vw] leading-none font-normal text-center text-transparent 
           bg-clip-text bg-linear-to-b from-neutral-600 via-neutral-800 to-zinc-950 relative z-20">
-            Adorable
+            Web Builder
           </h1>
 
           <div className="relative w-full h-28 -mt-4">
@@ -83,8 +83,8 @@ export default function Footer() {
 
 
         <div className="flex justify-between items-center pb-8 text-sm text-neutral-300">
-          <span>Adorable by Aniruddha</span>
-          <span>© 2026 Adorable. All rights reserved.</span>
+          <span>Web Builder by Pradeep</span>
+          <span>© 2026 Web Builder. All rights reserved.</span>
         </div>
 
       </div>

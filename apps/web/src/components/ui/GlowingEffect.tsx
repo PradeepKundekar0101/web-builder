@@ -23,7 +23,7 @@ export function GlowingEffectDemoSecond() {
       <GridItem
         area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
         icon={<Lock className="h-4 w-4 text-neutral-400" />}
-        title="Build things the Adorable way,built by Aniruddha"
+        title="Build things the Web Builder way,built by Pradeep"
         description="Powered by Openrouter"
       />
 
@@ -66,7 +66,7 @@ const GridItem = ({ area, icon, title, description }: GridItemProps) => {
           proximity={64}
           inactiveZone={0.01}
         />
-        
+
         {/* Middle layer - creates the gap/padding effect */}
         <div className="relative h-full rounded-2xl bg-neutral-950/50 p-2 md:rounded-3xl md:p-3">
           {/* Inner card with neumorphic shadow */}
@@ -76,7 +76,7 @@ const GridItem = ({ area, icon, title, description }: GridItemProps) => {
               <div className="w-fit rounded-lg border border-neutral-700/50 bg-neutral-800/50 p-2 shadow-sm backdrop-blur-sm">
                 {icon}
               </div>
-              
+
               {/* Text content */}
               <div className="space-y-3">
                 <h3 className="font-sans text-xl/[1.375rem] font-semibold text-white md:text-2xl/[1.875rem]">
