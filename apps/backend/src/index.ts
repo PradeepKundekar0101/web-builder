@@ -6,7 +6,8 @@ import cookieParser from "cookie-parser";
 import { tr } from "zod/locales";
 import chatRouter from "./routes/chatRoutes.js";
 
-
+import dotenv from "dotenv";
+dotenv.config();
 const app = express();
 
 //cors before routes
@@ -16,7 +17,7 @@ app.use(cors({
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
 }))
 
-app.use(cookieParser());     
+app.use(cookieParser());
 app.use(express.json());
 
 
