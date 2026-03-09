@@ -1,4 +1,5 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config();
 import { CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN } from "./config.js";
 import { Sandbox } from "@e2b/code-interpreter";
 import path from "path";

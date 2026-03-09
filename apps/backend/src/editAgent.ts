@@ -1,5 +1,6 @@
 import { z } from "zod";
-import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config();
 import { ChatOpenAI } from "@langchain/openai";
 import { StateGraph, MessagesAnnotation, END } from "@langchain/langgraph";
 import { ToolNode } from "@langchain/langgraph/prebuilt";
