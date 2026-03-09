@@ -10,13 +10,7 @@ import dotenv from "dotenv";
 dotenv.config();
 const app = express();
 
-//cors before routes
-app.use(cors({
-    origin: "*",
-    credentials: true, //allow cookies,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-}))
-
+app.use(cors({ origin: "*" }));
 app.use(cookieParser());
 app.use(express.json());
 
